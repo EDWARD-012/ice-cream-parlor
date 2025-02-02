@@ -1,4 +1,4 @@
-#Ravi Ice Cream Parlor
+Ravi Ice Cream Parlor
 A responsive and user-friendly website for browsing various ice cream flavors and products. The project showcases a clean design with an intuitive interface, making it easy for users to navigate and explore the offerings of the ice cream parlor.
 
 Features
