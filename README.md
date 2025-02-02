@@ -1,15 +1,59 @@
-Ravi Ice Cream Parlor
+# Ice Cream Parlor - Django Project
 
-This is my first DJANGO project
+A responsive and user-friendly website for an ice cream parlor built with Django.
 
+## Features
 
-A responsive and user-friendly website for browsing various ice cream flavors and products. The project showcases a clean design with an intuitive interface, making it easy for users to navigate and explore the offerings of the ice cream parlor.
+- User-friendly interface
+- Responsive design
+- Product pages for ice cream flavors
+- Dynamic content management using Django admin
 
-Features
-Responsive Design: The website adapts to different screen sizes, providing a seamless experience on both desktop and mobile devices.
-Easy Navigation: Users can easily browse through the menu and explore different flavors and products.
-Future Enhancements: Planned improvements include an online ordering system and customer review integration.
-Technologies Used
-Frontend: HTML, CSS, JavaScript
-Backend: Flask (Python)
-Hosting: PythonAnywhere
+## Setup Instructions
+
+### Requirements
+
+- Python 3.x
+- Django (see `requirements.txt` for details)
+
+### Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/EDWARD-012/ice-cream-parlor.git
+    ```
+    
+2. Navigate to the project directory:
+    ```bash
+    cd ice-cream-parlor
+    ```
+
+3. Create and activate a virtual environment:
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate    # For Windows, use `venv\Scripts\activate`
+    ```
+
+4. Install the dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5. Apply the migrations:
+    ```bash
+    python manage.py migrate
+    ```
+
+6. Run the server:
+    ```bash
+    python manage.py runserver
+    ```
+
+7. Access the website by opening your browser and navigating to:
+    ```
+    http://127.0.0.1:8000
+    ```
+
+## License
+
+This project is licensed under the MIT License.
