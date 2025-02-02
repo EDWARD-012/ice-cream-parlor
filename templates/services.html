@@ -1,0 +1,174 @@
+{% extends "base.html" %}
+
+{% block title %} Our Services {% endblock title %}
+
+{% block style %}
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 1em 0;
+  }
+
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header .logo {
+    /* Add your logo styling */
+  }
+
+  header nav {
+    display: flex;
+    gap: 1em;
+  }
+
+  header nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  header nav a:hover {
+    text-decoration: underline;
+  }
+
+  header .search-bar {
+    display: flex;
+    gap: 1em;
+  }
+
+  header .search-bar input {
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+  }
+
+  header .search-bar button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 2em;
+    font-size: 2.5em;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin-top: 2em;
+  }
+
+  @media (max-width: 768px) {
+    .services-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    header .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    header nav {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .services-list {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .service-card {
+    background-color: rgba(250, 226, 226, 0.9);
+    border: 1px solid #ddd;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .service-card h3 {
+    font-size: 1.8em;
+    color: #333;
+  }
+
+  .service-card p {
+    font-size: 1.1em;
+    color: #333;
+  }
+
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+{% endblock style %}
+
+{% block body %}
+  <div class="container">
+    <h2>Our Services</h2>
+    <p>We offer a variety of ice cream options to satisfy your sweet cravings. Indulge in our creamy treats that bring joy to every bite!</p>
+
+    <div class="services-list">
+      <div class="service-card">
+        <h3>Ice Cream</h3>
+        <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a" alt="Ice Cream" style="width: 100%; border-radius: 10px; margin-bottom: 1em; margin-top: 1em;">
+        <p>Choose from our extensive selection of classic and seasonal flavors, crafted to perfection.</p>
+      </div>
+      <div class="service-card">
+        <h3>Sundaes</h3>
+        <img src="https://images.unsplash.com/photo-1695886856009-0a264696ea2a" alt="Sundae" style="width: 100%; border-radius: 10px; margin-bottom: 1em; margin-top: 1em;">
+        <p>Our sundaes combine creamy ice cream with a variety of delicious toppings.</p>
+      </div>
+      <div class="service-card">
+        <h3>Shakes</h3>
+        <img src="https://plus.unsplash.com/premium_photo-1695035006670-766d822b26b0" alt="Shake" style="width: 100%; border-radius: 10px; margin-bottom: 1em; margin-top: 1em;">
+        <p>Thick, creamy, and bursting with flavor—our milkshakes are a favorite among all ages.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer style = "background-color: #222; color: #fff; text-align: center; height: 100px; padding-top: 20px; flex: 0 0 auto;">
+    <p class="text-center" style="color: rgba(255, 255, 255, 1);">
+        &copy; 2024 Ice Cream Parlour. All rights reserved.
+    </p>
+</footer>   
+{% endblock body %}
